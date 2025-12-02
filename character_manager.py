@@ -42,22 +42,13 @@ def create_character(name, character_class):
 
     # Base stats
     if character_class == "Warrior":
-        health = 120
-        strength = 15
-        magic = 5
+        health, strength, magic = 120,15,5
     elif character_class == "Mage":
-        health = 80
-        strength = 8
-        magic = 20
+        health, strength, magic = 80, 8, 20
     elif character_class == "Rogue":
-        health = 90
-        strength = 12
-        magic = 10
+        health, strength, magic = 90, 12, 10
     elif character_class == "Cleric":
-        health = 100
-        strength = 10
-        magic = 15
-
+        health, strength, magic = 100, 10, 15
     character = {"name": name, "class": character_class, "level": 1, "health": health, "max_health": health, "strength": strength, "magic": magic, "experience": 0, "gold": 100,"inventory": [], "active_quests": [],  "completed_quests": []}
 
     return character
