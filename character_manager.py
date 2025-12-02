@@ -34,7 +34,7 @@ def create_character(name, character_class):
     
     Raises: InvalidCharacterClassError if class is not valid
     """
-   character_class = character_class.capitalize()
+    character_class = character_class.capitalize()
     valid_classes = ["Warrior", "Mage", "Rogue", "Cleric"]
 
     if character_class not in valid_classes:
